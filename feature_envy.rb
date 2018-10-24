@@ -7,7 +7,7 @@ class ShoppingCart < ActiveRecord::Base
   end
 end
 
-# And the items that are stored in it
+# And the items...
 class Item < ActiveRecord::Base
   belongs_to :shopping_cart
 end

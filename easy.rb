@@ -8,7 +8,7 @@ class ShoppingCart # IrresponsibleModule smell
   # UncommunicativeMethodName smell and UnusedParameter smell
   def checkout1(rebate)
     # UncommunicativeVariable smell
-    x = '...'
+    x = 'Some string'
     # DuplicateMethodCall and InstanceVariableAssumption smell
     @total_prize = @items.prize + @items.prize
   end

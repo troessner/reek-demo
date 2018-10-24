@@ -1,19 +1,11 @@
 # Harder to fix code smells
 class ShoppingCart
-  # ControlCouple smell
-  def generate_invoice(format)
-    if format == :pdf
-      render_pdf
-    else
-      render_default
-    end
-  end
-
   # NestedIterators smell
   def print_description
     # RepeatedConditional
     puts "Too few items" if items.size < 5
     items.each do |item|
+      # ManualDispatch
       next if item.respond_to?(:disabled)
       item.descriptions.each do |description|
         puts description
