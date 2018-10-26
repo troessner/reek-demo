@@ -23,5 +23,6 @@ class ShoppingCart
   def discount?
     # RepeatedConditional
     puts "Too few items" if items.size < 5
+    true
   end
 end
