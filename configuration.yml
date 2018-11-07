@@ -24,7 +24,7 @@ directories:
     UtilityFunction:
       enabled: false
 
-### Excluding directories
+### Excluding directories and files
 
 exclude_paths:
   - lib/legacy
